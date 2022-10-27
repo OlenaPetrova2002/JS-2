@@ -90,11 +90,20 @@
         // Значение должно быть составлено по шаблону:
         // Привет, меня зовут Иван. Мне 25 лет. Я работаю на должности Frontend Developer в компании ITVDN. 
 
-        let message = `Привет, меня зовут ${name}. Мне ${age} лет. Я работаю на должности ${position} в компании ${company}. `;
-        console.log(message);
+        /*let message = `Привет, меня зовут ${name}. Мне ${age} лет. Я работаю на должности ${position} в компании ${company}. `;
+        console.log(message);*/
         
         /*let message = "Привет, меня зовут " + name + ". Мне " + age + " лет. Я работаю на должности " + position + " в компании " + company + ". ";
         console.log(message);*/
+
+        let productPrice = 101.5; // цена товара
+        let productQuantity = 50;  // количество единиц товара на складе
+        let productQuantityUse = prompt('Введите сколько хотите купить единиц товара'); 
+        let productPriceUse = productQuantityUse * productPrice;
+        alert('сумма вашей покупки составляет ' + productPriceUse );
+        alert('после покупки останется на складе ' + (productQuantity - productQuantityUse) + ' единиц товара');
+
+
 
   </script>
  
