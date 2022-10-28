@@ -153,7 +153,7 @@
     /*Если заказ от 500, скидка 5%, если заказ от 1000 скидка 10%, если заказ от 1500 скидка 15% и доставка бесплатная.
           Выведите пользователю стоимость заказа с учётом скидки и сумму скидки, которую он получил. Также информацию о стоимости доставки, если она была заказана.
           Используйте подходящую условную конструкцию.*/
-    let product1 = "Бумага офисная А4, 80 г/м2, 500 л";
+    /*let product1 = "Бумага офисная А4, 80 г/м2, 500 л";
     let product2 = "Биндеры для бумаги 51 мм";
     let product3 = "Ручка шариковая синяя";
 
@@ -198,8 +198,41 @@
       confirm("Заказываете доставку курьером?");
       console.log("Доставка 40");
       console.log(total += 40);
-    }
+    }*/
 
+    let age = +prompt("Введите ваш возраст");
+        let technology = prompt("Ведите 1 или 2. 1 - JavaScript. 2 - C#");
+        let expirience = prompt("Введите опыт работы в годах.");
+
+        let adult, specialization, position;
+
+        adult = age > 18 ? "совершеннолетний" : "несовершеннолетний";
+        
+        specialization = technology == 1 ? "Frontend" : "Backend";
+
+        if (expirience == 0)
+        {
+            position = "Без опыта работы";
+        }
+        else if (expirience > 0 && expirience < 1.5)
+        {
+            position = "Junior";
+        }
+        else if (expirience > 1.5 && expirience < 3)
+        {
+            position = "Middle";
+        }
+        else if(expirience > 3)
+        {
+            position = "Senior";
+        }
+        else
+        {
+            position = "error";
+        }
+
+        let result = `Возраст: ${adult}\r\nСпециализация: ${specialization}\r\nПозиция: ${position}`;
+        alert(result);
 
   </script>
 
