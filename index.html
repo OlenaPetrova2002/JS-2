@@ -134,72 +134,72 @@
 
     // }
 
-    // let country = prompt("введите название страны");
+    /*let country = prompt("введите название страны");
 
-    //     if (country == "Germany") {
-    //         alert("Немецкий язык");
-    //     }
-    //     else if (country == "France") {
-    //         alert("Французский язык");
-    //     }
-
-    //     else if (country == "USA" || country == "Great Britain") {
-    //         alert("Английский язык");
-    //     }
-    //     else {
-    //         alert("Указанной страны нет в списке");
-
-    
-  /*Если заказ от 500, скидка 5%, если заказ от 1000 скидка 10%, если заказ от 1500 скидка 15% и доставка бесплатная.
-        Выведите пользователю стоимость заказа с учётом скидки и сумму скидки, которую он получил. Также информацию о стоимости доставки, если она была заказана.
-        Используйте подходящую условную конструкцию.*/
-    let product1 = "Бумага офисная А4, 80 г/м2, 500 л";
-        let product2 = "Биндеры для бумаги 51 мм";
-        let product3 = "Ручка шариковая синяя";
-
-        let productPrice1 = 280.25;
-        let productPrice2 = 56;
-        let productPrice3 = 12.50;
-
-        let productQuantity1 = prompt(`Укажите количество продуктов '${product1}', цена ${productPrice1}`, 0);
-        let productQuantity2 = prompt(`Укажите количество продуктов '${product2}', цена ${productPrice2}`, 0);
-        let productQuantity3 = prompt(`Укажите количество продуктов '${product3}', цена ${productPrice3}`, 0);
-
-        let totalPriceProduct1 = productPrice1 * productQuantity1;
-        let totalPriceProduct2 = productPrice2 * productQuantity2;
-        let totalPriceProduct3 = productPrice3 * productQuantity3;
-
-        let total = totalPriceProduct1 + totalPriceProduct2 + totalPriceProduct3;
-        console.log(`Общая сумма по продукту '${product1}' составляет ${totalPriceProduct1}`);
-        console.log(`Общая сумма по продукту '${product2}' составляет ${totalPriceProduct2}`);
-        console.log(`Общая сумма по продукту '${product3}' составляет ${totalPriceProduct3}`);
-
-        console.log("Всего " + total);
-
-        let shipping;
-
-        if (total > 500 && total < 1000) {
-            console.log(`Общая сумма покупки '${total}'\r\n'с учетом 5% скидки '${total * 0.95}`);
-            let shipping = confirm("Заказываете доставку курьером?");
-            console.log("Доставка 40");
-            console.log(total += 40);
+        if (country == "Germany") {
+            alert("Немецкий язык");
         }
-        else if (total > 1000 && total < 1500) {
-            console.log(`Общая сумма покупки '${total}'\r\n'с учетом 10% скидки '${total * 0.9}`);
-            let shipping = confirm("Заказываете доставку курьером?");
-            console.log("Доставка 40");
-            console.log(total += 40);
+        else if (country == "France") {
+            alert("Французский язык");
         }
-        else if (total > 1500) {
-            console.log(`Общая сумма покупки '${total}'\r\n'с учетом 15% скидки '${total * 0.85}`);
-            console.log(`доставка бесплатная`);
+
+        else if (country == "USA" || country == "Great Britain") {
+            alert("Английский язык");
         }
         else {
-            confirm("Заказываете доставку курьером?");
-            console.log("Доставка 40");
-            console.log(total += 40);
-        }
-        
+            alert("Указанной страны нет в списке");*/
+
+
+    /*Если заказ от 500, скидка 5%, если заказ от 1000 скидка 10%, если заказ от 1500 скидка 15% и доставка бесплатная.
+          Выведите пользователю стоимость заказа с учётом скидки и сумму скидки, которую он получил. Также информацию о стоимости доставки, если она была заказана.
+          Используйте подходящую условную конструкцию.*/
+    let product1 = "Бумага офисная А4, 80 г/м2, 500 л";
+    let product2 = "Биндеры для бумаги 51 мм";
+    let product3 = "Ручка шариковая синяя";
+
+    let productPrice1 = 280.25;
+    let productPrice2 = 56;
+    let productPrice3 = 12.50;
+
+    let productQuantity1 = prompt(`Укажите количество продуктов '${product1}', цена ${productPrice1}`, 0);
+    let productQuantity2 = prompt(`Укажите количество продуктов '${product2}', цена ${productPrice2}`, 0);
+    let productQuantity3 = prompt(`Укажите количество продуктов '${product3}', цена ${productPrice3}`, 0);
+
+    let totalPriceProduct1 = productPrice1 * productQuantity1;
+    let totalPriceProduct2 = productPrice2 * productQuantity2;
+    let totalPriceProduct3 = productPrice3 * productQuantity3;
+
+    let total = totalPriceProduct1 + totalPriceProduct2 + totalPriceProduct3;
+    console.log(`Общая сумма по продукту '${product1}' составляет ${totalPriceProduct1}`);
+    console.log(`Общая сумма по продукту '${product2}' составляет ${totalPriceProduct2}`);
+    console.log(`Общая сумма по продукту '${product3}' составляет ${totalPriceProduct3}`);
+
+    console.log("Всего " + total);
+
+    let shipping;
+
+    if (total > 500 && total < 1000) {
+      console.log(`Общая сумма покупки '${total}'\r\n'с учетом 5% скидки '${total * 0.95}`);
+      let shipping = confirm("Заказываете доставку курьером?");
+      console.log("Доставка 40");
+      console.log(total += 40);
+    }
+    else if (total > 1000 && total < 1500) {
+      console.log(`Общая сумма покупки '${total}'\r\n'с учетом 10% скидки '${total * 0.9}`);
+      let shipping = confirm("Заказываете доставку курьером?");
+      console.log("Доставка 40");
+      console.log(total += 40);
+    }
+    else if (total > 1500) {
+      console.log(`Общая сумма покупки '${total}'\r\n'с учетом 15% скидки '${total * 0.85}`);
+      console.log(`доставка бесплатная`);
+    }
+    else {
+      confirm("Заказываете доставку курьером?");
+      console.log("Доставка 40");
+      console.log(total += 40);
+    }
+
 
   </script>
 
