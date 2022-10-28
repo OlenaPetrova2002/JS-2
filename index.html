@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <body>
   <script>
     'use strict';
@@ -10,10 +11,10 @@
 
     /*let a = 0;
     alert(++a);*/
-    
+
     /*let a = 24 * 60 * 60;
     alert(a);*/
-   
+
     /*let num = 123;
     let str = String(num);
     alert(str.length);*/
@@ -29,7 +30,7 @@
     let bbb = 2;
     let ccc = 3;
     alert((aaa + bbb) +ccc);*/
-   
+
     /*let num1 = 1;
     let num2 = 2;
     alert('сумма: ' + (num1 + num2)); */
@@ -53,7 +54,7 @@
     alert(arr[0]); // выведет 'a'
     alert(arr[1]); // выведет 'b'
     alert(arr[2]); // выведет 'c'*/
-    
+
     /*let arr = [1, 2, 3];
     alert(arr[0] + arr[1] + arr[2]);*/
 
@@ -67,7 +68,7 @@
     arr[0] = '1';
     arr[1] = '-2';
     arr[2] = '-3';
-    alert(arr[0] + arr[1] + arr[2]);*/ 
+    alert(arr[0] + arr[1] + arr[2]);*/
 
     /*let arr = [1, 2, 3, 4, 5];
     alert(arr[arr.length-1]);*/
@@ -79,34 +80,47 @@
     let prop = 'x';
     alert(obj[prop]);*/
 
-    let name = "Иван";
+    /*let name = "Иван";
         let age = 25;
         let company = "ITVDN";
-        let position = "Frontend Developer";
+        let position = "Frontend Developer";*/
 
-        // инициализируйте переменную message
-        // значение должно быть создано с помощью шаблонной строки и с помощью конкатенации.
-        // строковое значение должно быть создано на основе значений переменных name, age, company, position
-        // Значение должно быть составлено по шаблону:
-        // Привет, меня зовут Иван. Мне 25 лет. Я работаю на должности Frontend Developer в компании ITVDN. 
+    // инициализируйте переменную message
+    // значение должно быть создано с помощью шаблонной строки и с помощью конкатенации.
+    // строковое значение должно быть создано на основе значений переменных name, age, company, position
+    // Значение должно быть составлено по шаблону:
+    // Привет, меня зовут Иван. Мне 25 лет. Я работаю на должности Frontend Developer в компании ITVDN. 
 
-        /*let message = `Привет, меня зовут ${name}. Мне ${age} лет. Я работаю на должности ${position} в компании ${company}. `;
-        console.log(message);*/
-        
-        /*let message = "Привет, меня зовут " + name + ". Мне " + age + " лет. Я работаю на должности " + position + " в компании " + company + ". ";
-        console.log(message);*/
+    /*let message = `Привет, меня зовут ${name}. Мне ${age} лет. Я работаю на должности ${position} в компании ${company}. `;
+    console.log(message);*/
 
-        let productPrice = 101.5; // цена товара
-        let productQuantity = 50;  // количество единиц товара на складе
-        let productQuantityUse = prompt('Введите сколько хотите купить единиц товара'); 
-        let productPriceUse = productQuantityUse * productPrice;
-        alert('сумма вашей покупки составляет ' + productPriceUse );
-        alert('после покупки останется на складе ' + (productQuantity - productQuantityUse) + ' единиц товара');
+    /*let message = "Привет, меня зовут " + name + ". Мне " + age + " лет. Я работаю на должности " + position + " в компании " + company + ". ";
+    console.log(message);*/
+
+    /*let productPrice = 101.5; // цена товара
+    let productQuantity = 50;  // количество единиц товара на складе
+    let productQuantityUse = prompt('Введите сколько хотите купить единиц товара'); 
+    let productPriceUse = productQuantityUse * productPrice;
+    alert('сумма вашей покупки составляет ' + productPriceUse );
+    alert('после покупки останется на складе ' + (productQuantity - productQuantityUse) + ' единиц товара');*/
+
+    let value = +prompt("Введите число 1 или 2");
+
+    switch (value) {
+      case 1: 1;
+        alert("Вы ввели число 1");
+        break;
+      case 2: 2;
+        alert("Вы ввели число 2");
+        break;
+      default:
+        alert("Вы ввели неправильное значение");
+    }
 
 
 
   </script>
- 
-</body>
-</html>
 
+</body>
+
+</html>
