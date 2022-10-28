@@ -104,7 +104,7 @@
     alert('сумма вашей покупки составляет ' + productPriceUse );
     alert('после покупки останется на складе ' + (productQuantity - productQuantityUse) + ' единиц товара');*/
 
-    let value = +prompt("Введите число 1 или 2");
+    /*let value = +prompt("Введите число 1 или 2");
 
     switch (value) {
       case 1: 1;
@@ -114,7 +114,24 @@
         alert("Вы ввели число 2");
         break;
       default:
-        alert("Вы ввели неправильное значение");
+        alert("Вы ввели неправильное значение");*/
+        let season = +prompt('Введите время года:' + '\r\n' + 'если зима введите - 1' + '\r\n' + 'если весна введите - 2' + '\r\n' + 'если лето введите -3' + '\r\n' + 'если осень введите - 4');
+        switch (season) {
+            case 1: 1
+                alert('Сейчас зима');
+                break;
+            case 2: 2
+                alert('Сейчас весна');
+                break;
+            case 3: 3
+                alert('Сейчас лето');
+                break;
+            case 4: 4
+                alert('Сейчас осень');
+                break;
+            default: alert('Вы ввели неправильное значение времени года')
+                break;
+                
     }
 
 
