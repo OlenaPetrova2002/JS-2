@@ -258,7 +258,7 @@
         console.log(city);
       }*/
 
-    let values = [];
+    /*let values = [];
 
     while (true) {
       let input = prompt('введите число или для остановки введите stop');
@@ -277,7 +277,28 @@
     for (let i = 0; i < values.length; i++) {
       sum += values[i];
     }
-    alert(`сумму всех значений, которые находятся в массиве ${sum}`);
+    alert(`сумму всех значений, которые находятся в массиве ${sum}`);*/$
+
+    let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+    let oddValues = [];
+    let evenValues = [];
+    let oddValuesPosition = 0;
+    let evenValuesPosition = 0;
+
+    for (let value of values) {
+      if (value % 2 == 0) { evenValues.push(value); }
+      else { oddValues.push(value); }
+    }
+
+    console.log("Нечетные значения");
+    for (let oddVal of oddValues) {
+      console.log(oddVal);
+    }
+
+    console.log("Четные значения");
+    for (let evenVal of evenValues) {
+      console.log(evenVal);
+    }
 
   </script>
 
