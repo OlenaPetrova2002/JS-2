@@ -240,23 +240,44 @@
                }
            }*/
 
-    let cities = ["London", "Paris", "Berlin", "Rome", "Budapest", "Lisbon", "Madrid", "Amsterdam"];
+    /*  let cities = ["London", "Paris", "Berlin", "Rome", "Budapest", "Lisbon", "Madrid", "Amsterdam"];
+  
+      let cityUse = prompt('ввести название города');
+  
+      let index = cities.indexOf(`${cityUse}`);
+  
+  
+      if (cityUse == -1) {
+        alert('города нет в массиве');
+      }
+      else {
+        cities.splice(index, 1);
+  
+      }
+      for (const city of cities) {
+        console.log(city);
+      }*/
 
-    let cityUse = prompt('ввести название города');
+    let values = [];
 
-    let index = cities.indexOf(`${cityUse}`);
+    while (true) {
+      let input = prompt('введите число или для остановки введите stop');
 
+      if (input == 'stop') break;
 
-    if (cityUse == -1) {
-      alert('города нет в массиве');
+      let value = Number(input);
+
+      if (isNaN(value)) {
+        alert(' введенные значения, не являются числом');
+      }
+      else { values.push(value); }
     }
-    else {
-      cities.splice(index, 1);
 
+    let sum = 0;
+    for (let i = 0; i < values.length; i++) {
+      sum += values[i];
     }
-    for (const city of cities) {
-      console.log(city);
-    }
+    alert(`сумму всех значений, которые находятся в массиве ${sum}`);
 
   </script>
 
