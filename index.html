@@ -279,7 +279,7 @@
     }
     alert(`сумму всех значений, которые находятся в массиве ${sum}`);*/$
 
-    let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+    /*let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
     let oddValues = [];
     let evenValues = [];
     let oddValuesPosition = 0;
@@ -298,7 +298,22 @@
     console.log("Четные значения");
     for (let evenVal of evenValues) {
       console.log(evenVal);
+    }*/
+
+    let values = [10, 20, -2, 6, 11, -10, 125, -3, 8, 0, 3];
+
+    for (let i = values.length; i > 0; i--) {
+      const element = values[i];
+
+      if (element < 0) {
+        values.splice(i, 1);
+      }
     }
+    console.log('все значения в массиве меньше 0: ');
+    for (const value of values) {
+      console.log(value);
+    }
+
 
   </script>
 
