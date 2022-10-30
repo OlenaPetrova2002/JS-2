@@ -234,11 +234,29 @@
         let result = `Возраст: ${adult}\r\nСпециализация: ${specialization}\r\nПозиция: ${position}`;
         alert(result);*/$
 
-        for (let i = 1; i <= 100; i++) {
-            if (i % 2 == 0) {
-                console.log(i);
-            }
-        }
+    /*       for (let i = 1; i <= 100; i++) {
+               if (i % 2 == 0) {
+                   console.log(i);
+               }
+           }*/
+
+    let cities = ["London", "Paris", "Berlin", "Rome", "Budapest", "Lisbon", "Madrid", "Amsterdam"];
+
+    let cityUse = prompt('ввести название города');
+
+    let index = cities.indexOf(`${cityUse}`);
+
+
+    if (cityUse == -1) {
+      alert('города нет в массиве');
+    }
+    else {
+      cities.splice(index, 1);
+
+    }
+    for (const city of cities) {
+      console.log(city);
+    }
 
   </script>
 
