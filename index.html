@@ -314,7 +314,7 @@
       console.log(value);
     }*/
 
-    let names = [];
+    /*let names = [];
     names[0] = "Бумага офисная А4, 80 г/м2, 500 л";
     names[1] = "Биндеры для бумаги 51 мм";
     names[2] = "Ручка шариковая синяя";
@@ -346,7 +346,29 @@
       totalSum += price;
       console.log(`Куплено ${productName} на сумму ${price}`);
     }
-    console.log("Всего продуктов куплено на " + totalSum);
+    console.log("Всего продуктов куплено на " + totalSum);*/$
+    function avg(a, b, c) {
+      let sum = 0;
+      let count = 0;
+
+      if (a) {
+        sum = sum + a;
+        count++;
+      }
+      if (b) {
+        sum = sum + b;
+        count++;
+      }
+      if (c) {
+        sum = sum + c;
+        count++;
+      }
+      let result = sum / count;
+      return result;
+    }
+    let result1 = avg(10, 20, 30);
+    console.log(result1);
+
 
   </script>
 
