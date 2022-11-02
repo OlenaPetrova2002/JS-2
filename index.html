@@ -457,11 +457,23 @@
        console.log("Всего продуктов куплено на " + totalSum);
      }*/
 
-    var data = [1, 2, 3, 4, 5];
+    /*var data = [1, 2, 3, 4, 5];
 
     var result = data.map(value => value * value);
 
-    result.forEach(e => console.log(e));
+    result.forEach(e => console.log(e));*/
+
+
+    let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+    let oddValues = values.filter(x => x % 2 != 0);
+    let evenValues = values.filter(x => x % 2 == 0);
+
+    console.log("Нечетные значения");
+    oddValues.forEach(x => console.log(x));
+
+    console.log("Четные значения");
+    evenValues.forEach(x => console.log(x));
+
 
   </script>
 
