@@ -787,13 +787,23 @@
      delete user.email;
      console.log(user);*/
 
-    let obj = { a: 1, b: 2, c: 3 };
+    /*let obj = { a: 1, b: 2, c: 3 };
 
     let keys = Object.keys(obj);
     
-    console.log(keys); 
+    console.log(keys); */
 
-    console.log(keys); 
+    let obj1 = {
+            firstName: "Ivan",
+            lastName: "Ivanov",
+
+            print: function (obj) {
+                console.log("First Name: " + this.firstName);
+                console.log("Last Name: " + this.lastName);
+            }
+        };
+
+        obj1.print();  
 
   </script>
 
