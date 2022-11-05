@@ -793,17 +793,36 @@
     
     console.log(keys); */
 
-    let obj1 = {
-            firstName: "Ivan",
-            lastName: "Ivanov",
+    /*    let obj1 = {
+                firstName: "Ivan",
+                lastName: "Ivanov",
+    
+                print: function (obj) {
+                    console.log("First Name: " + this.firstName);
+                    console.log("Last Name: " + this.lastName);
+                }
+            };
+    
+            obj1.print();  
+          }*/
 
-            print: function (obj) {
-                console.log("First Name: " + this.firstName);
-                console.log("Last Name: " + this.lastName);
-            }
-        };
 
-        obj1.print();  
+
+    let user = {
+      balance: '$1,250.89',
+      age: 24,
+      name: 'Golden Clements',
+      company: 'EWAVES',
+      email: 'golden.clements@ewaves.io',
+      friends: 5,
+      favoriteFruit: 'strawberry'
+    }
+
+    for (const key in user) {
+      if (typeof user[key] == "string") {
+        console.log(key + "=" + user[key]);
+      }
+    }
 
   </script>
 
