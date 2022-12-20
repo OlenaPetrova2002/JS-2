@@ -9,17 +9,20 @@
 
 <body>
     <script>
-        for (let i = 0; i < 5; i++) {
-            console.log("cycle 1 - iteration #" + i);
-            break; // break - остановить эту итерацию и запретить выполнение всех последующих
-            console.log("эта строка не отобразится");
-        }
+        let cities = ["London", "Paris", "Berlin", "Rome", "Lisbon", "Rome"];
+let index;
+index = cities.indexOf("Rome");
+console.log(index); // 3
 
-        for (let i = 0; i < 5; i++) {
-            console.log("cycle 2 - iteration #" + i);
-            continue; // continue - остановить эту итерацию и перейти к следующей
-            console.log("эта строка не отобразится");
-        }
+index = cities.indexOf("Madrid");
+console.log(index); // -1 значение не найдено
+        
+index = cities.indexOf("Rome", 4); // искать индекс значения Rome, начиная с 4 индекса массива
+console.log(index); // 5
+
+index = cities.lastIndexOf("Rome");         // lastIndexOf – метод для поиска справа налево
+console.log(index); // 5
+
     </script>
 </body>
 
