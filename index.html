@@ -4,25 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>break and continue</title>
+    <title>Task 4</title>
 </head>
 
 <body>
+   
     <script>
-        let cities = ["London", "Paris", "Berlin", "Rome", "Lisbon", "Rome"];
-let index;
-index = cities.indexOf("Rome");
-console.log(index); // 3
+        let throwCount = +prompt("Сколько раз вы хотите бросить шестигранный кубик");
 
-index = cities.indexOf("Madrid");
-console.log(index); // -1 значение не найдено
-        
-index = cities.indexOf("Rome", 4); // искать индекс значения Rome, начиная с 4 индекса массива
-console.log(index); // 5
+        for (let i = 0; i < throwCount; i++) {
+            const result = random(1, 6);
+            console.log(result);
+        }
 
-index = cities.lastIndexOf("Rome");         // lastIndexOf – метод для поиска справа налево
-console.log(index); // 5
-
+        function random(min, max) {
+            return min + Math.floor((max - min + 1) * Math.random());
+        }
     </script>
 </body>
 
